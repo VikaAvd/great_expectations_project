@@ -3,10 +3,10 @@
 This project demonstrates how to set up a Great Expectations (GX) workflow using a virtual environment, connect to an MSSQL database, profile a dataset, create expectations, validate data through checkpoints, and explore Data Docs.
 
 ##  Prerequisites
-Windows OS
-Python 3.9+ installed
-ODBC Driver 17 for SQL Server
-Access to MS SQL Server (TRN database)
+ - Windows OS
+ - Python 3.9+ installed
+ - ODBC Driver 17 for SQL Server
+ - Access to MS SQL Server (TRN database)
 
 ## Project Goals
 
