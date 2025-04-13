@@ -94,11 +94,12 @@ python scripts/profile_employees_suite.py
 ```bash
 python scripts/create_employees_checkpoint.py
 ```
-***If everything is okay, you will see:***
+ - ***If everything is okay, you will see:***
 ```✅ Checkpoint succeeded! Data meets expectations.```
-***If data has quality issues:***
+ - ***If data has quality issues:***
 ```❌ Checkpoint failed! Some expectations did not pass.```
 ![alt text](image-1.png)
+💡 Tip: You can intentionally modify the employees table (e.g. add a row with salary = 1000) to simulate data quality issues and see expectations fail.
 
 ### Review Data Docs in the folder:
 ```gx/uncommitted/data_docs/local_site/index.html```
