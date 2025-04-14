@@ -98,7 +98,7 @@ python scripts/create_employees_checkpoint.py
 ```✅ Checkpoint succeeded! Data meets expectations.```
  - ***If data has quality issues:***
 ```❌ Checkpoint failed! Some expectations did not pass.```
-![alt text](image.png)
+![alt text](image-1.png)
 💡 Tip: You can intentionally modify the employees table (e.g. add a row with salary = 1000) to simulate data quality issues and see expectations fail.
 
 ### Review Data Docs in the folder:
