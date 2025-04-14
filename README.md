@@ -30,7 +30,7 @@ project-root/
 │   ├── checkpoints/                      # Checkpoint definitions
 │   ├── validation_definitions/           # (Optional) validation rules
 │   ├── uncommitted/                      # Local runtime output 
-│   │   ├── config_variables.yml          # Credentials or local settings
+│   │   ├── config_variables.yml          # Credentials or local settings (ignored in Git due to sensitive data)
 │   │   ├── validations/                  # Validation results
 │   │   └── data_docs/                    # Rendered Data Docs
 │   └── plugins/                          # Custom components (optional)
@@ -98,12 +98,13 @@ python scripts/create_employees_checkpoint.py
 ```✅ Checkpoint succeeded! Data meets expectations.```
  - ***If data has quality issues:***
 ```❌ Checkpoint failed! Some expectations did not pass.```
-![alt text](image-1.png)
+![alt text](image.png)
 💡 Tip: You can intentionally modify the employees table (e.g. add a row with salary = 1000) to simulate data quality issues and see expectations fail.
 
 ### Review Data Docs in the folder:
 ```gx/uncommitted/data_docs/local_site/index.html```
-![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
 
 
 

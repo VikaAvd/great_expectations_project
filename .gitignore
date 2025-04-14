@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 debug_context_config.py
 gx/uncommitted/config_variables.yml
+gx/expectations/.ge_store_backend_id

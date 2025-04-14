@@ -1,0 +1,2257 @@
+{
+  "evaluation_parameters": {},
+  "meta": {
+    "active_batch_definition": {
+      "batch_identifiers": {},
+      "data_asset_name": "employees",
+      "data_connector_name": "fluent",
+      "datasource_name": "mssql_trn"
+    },
+    "batch_markers": {
+      "ge_load_time": "20250413T165231.055976Z"
+    },
+    "batch_spec": {
+      "batch_identifiers": {},
+      "data_asset_name": "employees",
+      "schema_name": null,
+      "table_name": "employees",
+      "type": "table"
+    },
+    "checkpoint_id": null,
+    "checkpoint_name": "employees_checkpoint",
+    "expectation_suite_name": "employees_warning_suite",
+    "great_expectations_version": "0.18.9",
+    "run_id": {
+      "run_name": null,
+      "run_time": "2025-04-13T19:52:31.047876+03:00"
+    },
+    "validation_id": null,
+    "validation_time": "20250413T165231.061884Z"
+  },
+  "results": [
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_columns_to_match_ordered_list",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column_list": [
+            "employee_id",
+            "first_name",
+            "last_name",
+            "email",
+            "phone_number",
+            "hire_date",
+            "job_id",
+            "salary",
+            "manager_id",
+            "department_id"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": [
+          "employee_id",
+          "first_name",
+          "last_name",
+          "email",
+          "phone_number",
+          "hire_date",
+          "job_id",
+          "salary",
+          "manager_id",
+          "department_id"
+        ]
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_row_count_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "max_value": 40,
+          "min_value": 40
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 40
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_min_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "employee_id",
+          "max_value": 100,
+          "min_value": 100
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 100
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_max_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "employee_id",
+          "max_value": 206,
+          "min_value": 206
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 206
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_mean_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "employee_id",
+          "max_value": 140.225,
+          "min_value": 140.225
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 140.225
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_median_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "employee_id",
+          "max_value": 119.5,
+          "min_value": 119.5
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 119.5
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_quantile_values_to_be_between",
+        "kwargs": {
+          "allow_relative_error": false,
+          "batch_id": "mssql_trn-employees",
+          "column": "employee_id",
+          "quantile_ranges": {
+            "quantiles": [
+              0.05,
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ],
+            "value_ranges": [
+              [
+                101,
+                101
+              ],
+              [
+                109,
+                109
+              ],
+              [
+                119,
+                119
+              ],
+              [
+                178,
+                178
+              ],
+              [
+                204,
+                204
+              ]
+            ]
+          }
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "details": {
+          "success_details": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "observed_value": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "values": [
+            101,
+            109,
+            119,
+            178,
+            204
+          ]
+        }
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "employee_id"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 40,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "employee_id",
+          "max_value": 1.0,
+          "min_value": 1.0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 1.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "employee_id",
+          "type_list": [
+            "BIGINT",
+            "BYTEINT",
+            "ByteType()",
+            "INT",
+            "INT64",
+            "INTEGER",
+            "Int16Dtype",
+            "Int32Dtype",
+            "Int64Dtype",
+            "Int8Dtype",
+            "IntegerType",
+            "IntegerType()",
+            "LongType",
+            "LongType()",
+            "SMALLINT",
+            "ShortType()",
+            "TINYINT",
+            "UInt16Dtype",
+            "UInt32Dtype",
+            "UInt64Dtype",
+            "UInt8Dtype",
+            "int",
+            "int16",
+            "int32",
+            "int64",
+            "int8",
+            "int_",
+            "integer",
+            "uint16",
+            "uint32",
+            "uint64",
+            "uint8",
+            "Uint8",
+            "Uint16",
+            "Uint32",
+            "Uint64",
+            "Uint128",
+            "Uint256",
+            "Int8",
+            "Int16",
+            "Int32",
+            "Int64",
+            "Int128",
+            "Int256"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "INTEGER"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "first_name",
+          "value_set": [
+            "Adam",
+            "Alexander",
+            "Britney",
+            "Bruce",
+            "Charles",
+            "Daniel",
+            "David",
+            "Den",
+            "Diana",
+            "Guy",
+            "Hermann",
+            "Irene",
+            "Ismael",
+            "Jack",
+            "Jennifer",
+            "John",
+            "Jonathon",
+            "Jose Manuel",
+            "Karen",
+            "Kimberely",
+            "Lex",
+            "Luis",
+            "Matthew",
+            "Michael",
+            "Nancy",
+            "Neena",
+            "Pat",
+            "Payam",
+            "Sarah",
+            "Shanta",
+            "Shelley",
+            "Shelli",
+            "Sigal",
+            "Steven",
+            "Susan",
+            "Valli",
+            "William"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 40,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "first_name"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 40,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "first_name",
+          "max_value": 0.925,
+          "min_value": 0.925
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.925
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "first_name",
+          "type_list": [
+            "CHAR",
+            "NCHAR",
+            "NTEXT",
+            "NVARCHAR",
+            "STRING",
+            "StringType",
+            "StringType()",
+            "TEXT",
+            "VARCHAR",
+            "dtype('O')",
+            "object",
+            "str",
+            "string",
+            "FixedString"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "VARCHAR"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "last_name"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 40,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "last_name",
+          "max_value": 1.0,
+          "min_value": 1.0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 1.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "last_name",
+          "type_list": [
+            "CHAR",
+            "NCHAR",
+            "NTEXT",
+            "NVARCHAR",
+            "STRING",
+            "StringType",
+            "StringType()",
+            "TEXT",
+            "VARCHAR",
+            "dtype('O')",
+            "object",
+            "str",
+            "string",
+            "FixedString"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "VARCHAR"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "email"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 40,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "email",
+          "max_value": 1.0,
+          "min_value": 1.0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 1.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "email",
+          "type_list": [
+            "CHAR",
+            "NCHAR",
+            "NTEXT",
+            "NVARCHAR",
+            "STRING",
+            "StringType",
+            "StringType()",
+            "TEXT",
+            "VARCHAR",
+            "dtype('O')",
+            "object",
+            "str",
+            "string",
+            "FixedString"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "VARCHAR"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "phone_number",
+          "mostly": 0.85
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 40,
+        "partial_unexpected_counts": [
+          {
+            "count": 6,
+            "value": null
+          }
+        ],
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "unexpected_count": 6,
+        "unexpected_percent": 15.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "phone_number",
+          "max_value": 1.0,
+          "min_value": 1.0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 1.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "phone_number",
+          "type_list": [
+            "CHAR",
+            "NCHAR",
+            "NTEXT",
+            "NVARCHAR",
+            "STRING",
+            "StringType",
+            "StringType()",
+            "TEXT",
+            "VARCHAR",
+            "dtype('O')",
+            "object",
+            "str",
+            "string",
+            "FixedString"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "VARCHAR"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "hire_date",
+          "max_value": "2000-01-04 00:00:00",
+          "min_value": "1987-06-17 00:00:00",
+          "parse_strings_as_datetimes": false
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 40,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "hire_date",
+          "value_set": [
+            "1987-06-17",
+            "1987-09-17",
+            "1989-09-21",
+            "1990-01-03",
+            "1991-05-21",
+            "1993-01-13",
+            "1994-06-07",
+            "1994-08-16",
+            "1994-08-17",
+            "1994-12-07",
+            "1995-05-01",
+            "1995-05-18",
+            "1996-02-04",
+            "1996-02-17",
+            "1996-07-18",
+            "1996-10-01",
+            "1997-01-05",
+            "1997-03-03",
+            "1997-04-10",
+            "1997-06-25",
+            "1997-07-24",
+            "1997-08-17",
+            "1997-09-28",
+            "1997-09-30",
+            "1997-10-10",
+            "1997-12-24",
+            "1998-02-05",
+            "1998-03-07",
+            "1998-03-24",
+            "1998-04-23",
+            "1998-09-28",
+            "1998-11-15",
+            "1999-02-07",
+            "1999-05-24",
+            "1999-08-10",
+            "1999-12-07",
+            "2000-01-04"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 40,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "hire_date"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 40,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "hire_date",
+          "max_value": 0.925,
+          "min_value": 0.925
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.925
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "hire_date",
+          "type_list": [
+            "DATE",
+            "TIME",
+            "DATETIME",
+            "DATETIME2",
+            "DATETIME64",
+            "SMALLDATETIME",
+            "DATETIMEOFFSET",
+            "TIMESTAMP",
+            "Timestamp",
+            "TimestampType",
+            "TimestampType()",
+            "DateType",
+            "DateType()",
+            "datetime64",
+            "datetime64[ns]",
+            "timedelta[ns]",
+            "<M8[ns]",
+            "Date",
+            "Date32",
+            "DateTime",
+            "DateTime64"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "DATE"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_min_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "job_id",
+          "max_value": 1,
+          "min_value": 1
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 1
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_max_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "job_id",
+          "max_value": 19,
+          "min_value": 19
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 19
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_mean_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "job_id",
+          "max_value": 11.1,
+          "min_value": 11.1
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 11.1
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_median_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "job_id",
+          "max_value": 11.5,
+          "min_value": 11.5
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 11.5
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_quantile_values_to_be_between",
+        "kwargs": {
+          "allow_relative_error": false,
+          "batch_id": "mssql_trn-employees",
+          "column": "job_id",
+          "quantile_ranges": {
+            "quantiles": [
+              0.05,
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ],
+            "value_ranges": [
+              [
+                2,
+                2
+              ],
+              [
+                6,
+                6
+              ],
+              [
+                11,
+                11
+              ],
+              [
+                16,
+                16
+              ],
+              [
+                19,
+                19
+              ]
+            ]
+          }
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "details": {
+          "success_details": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "observed_value": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "values": [
+            2,
+            6,
+            11,
+            16,
+            19
+          ]
+        }
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "job_id",
+          "value_set": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 40,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "job_id"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 40,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "job_id",
+          "max_value": 0.475,
+          "min_value": 0.475
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.475
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "job_id",
+          "type_list": [
+            "BIGINT",
+            "BYTEINT",
+            "ByteType()",
+            "INT",
+            "INT64",
+            "INTEGER",
+            "Int16Dtype",
+            "Int32Dtype",
+            "Int64Dtype",
+            "Int8Dtype",
+            "IntegerType",
+            "IntegerType()",
+            "LongType",
+            "LongType()",
+            "SMALLINT",
+            "ShortType()",
+            "TINYINT",
+            "UInt16Dtype",
+            "UInt32Dtype",
+            "UInt64Dtype",
+            "UInt8Dtype",
+            "int",
+            "int16",
+            "int32",
+            "int64",
+            "int8",
+            "int_",
+            "integer",
+            "uint16",
+            "uint32",
+            "uint64",
+            "uint8",
+            "Uint8",
+            "Uint16",
+            "Uint32",
+            "Uint64",
+            "Uint128",
+            "Uint256",
+            "Int8",
+            "Int16",
+            "Int32",
+            "Int64",
+            "Int128",
+            "Int256"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "INTEGER"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_min_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "salary",
+          "max_value": 2500.0,
+          "min_value": 2500.0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 2500.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_max_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "salary",
+          "max_value": 24000.0,
+          "min_value": 24000.0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 24000.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_mean_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "salary",
+          "max_value": 8060.0,
+          "min_value": 8060.0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 8060.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_median_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "salary",
+          "max_value": 7750.0,
+          "min_value": 7750.0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 7750.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_quantile_values_to_be_between",
+        "kwargs": {
+          "allow_relative_error": false,
+          "batch_id": "mssql_trn-employees",
+          "column": "salary",
+          "quantile_ranges": {
+            "quantiles": [
+              0.05,
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ],
+            "value_ranges": [
+              [
+                2600.0,
+                2600.0
+              ],
+              [
+                4400.0,
+                4400.0
+              ],
+              [
+                7700.0,
+                7700.0
+              ],
+              [
+                9000.0,
+                9000.0
+              ],
+              [
+                17000.0,
+                17000.0
+              ]
+            ]
+          }
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "details": {
+          "success_details": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "observed_value": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "values": [
+            2600.0,
+            4400.0,
+            7700.0,
+            9000.0,
+            17000.0
+          ]
+        }
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "salary",
+          "value_set": [
+            2500.0,
+            2600.0,
+            2700.0,
+            2800.0,
+            2900.0,
+            3100.0,
+            3900.0,
+            4000.0,
+            4200.0,
+            4400.0,
+            4800.0,
+            6000.0,
+            6200.0,
+            6500.0,
+            6900.0,
+            7000.0,
+            7700.0,
+            7800.0,
+            7900.0,
+            8000.0,
+            8200.0,
+            8300.0,
+            8400.0,
+            8600.0,
+            9000.0,
+            10000.0,
+            11000.0,
+            12000.0,
+            13000.0,
+            13500.0,
+            14000.0,
+            17000.0,
+            24000.0
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 40,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "salary"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 40,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "salary",
+          "max_value": 0.825,
+          "min_value": 0.825
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.825
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "salary",
+          "type_list": [
+            "DECIMAL",
+            "DOUBLE",
+            "DOUBLE_PRECISION",
+            "DecimalType()",
+            "DoubleType",
+            "DoubleType()",
+            "FLOAT",
+            "FLOAT4",
+            "FLOAT64",
+            "FLOAT8",
+            "FloatType",
+            "FloatType()",
+            "NUMERIC",
+            "REAL",
+            "float",
+            "float16",
+            "float32",
+            "float64",
+            "float_",
+            "number",
+            "Float32",
+            "Float64"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "DECIMAL"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_min_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "manager_id",
+          "max_value": 100,
+          "min_value": 100
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 100
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_max_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "manager_id",
+          "max_value": 205,
+          "min_value": 205
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 205
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_mean_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "manager_id",
+          "max_value": 110.28205128205128,
+          "min_value": 110.28205128205128
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 110.28205128205128
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_median_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "manager_id",
+          "max_value": 102,
+          "min_value": 102
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 102
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_quantile_values_to_be_between",
+        "kwargs": {
+          "allow_relative_error": false,
+          "batch_id": "mssql_trn-employees",
+          "column": "manager_id",
+          "quantile_ranges": {
+            "quantiles": [
+              0.05,
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ],
+            "value_ranges": [
+              [
+                100,
+                100
+              ],
+              [
+                100,
+                100
+              ],
+              [
+                102,
+                102
+              ],
+              [
+                114,
+                114
+              ],
+              [
+                201,
+                201
+              ]
+            ]
+          }
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "details": {
+          "success_details": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "observed_value": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "values": [
+            100,
+            100,
+            102,
+            114,
+            201
+          ]
+        }
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "manager_id",
+          "value_set": [
+            100,
+            101,
+            102,
+            103,
+            108,
+            114,
+            120,
+            123,
+            201,
+            205
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 40,
+        "missing_count": 1,
+        "missing_percent": 2.5,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "manager_id",
+          "mostly": 0.97
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 40,
+        "partial_unexpected_counts": [
+          {
+            "count": 1,
+            "value": null
+          }
+        ],
+        "partial_unexpected_list": [
+          null
+        ],
+        "unexpected_count": 1,
+        "unexpected_percent": 2.5
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "manager_id",
+          "max_value": 0.2564102564102564,
+          "min_value": 0.2564102564102564
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.2564102564102564
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "manager_id",
+          "type_list": [
+            "BIGINT",
+            "BYTEINT",
+            "ByteType()",
+            "INT",
+            "INT64",
+            "INTEGER",
+            "Int16Dtype",
+            "Int32Dtype",
+            "Int64Dtype",
+            "Int8Dtype",
+            "IntegerType",
+            "IntegerType()",
+            "LongType",
+            "LongType()",
+            "SMALLINT",
+            "ShortType()",
+            "TINYINT",
+            "UInt16Dtype",
+            "UInt32Dtype",
+            "UInt64Dtype",
+            "UInt8Dtype",
+            "int",
+            "int16",
+            "int32",
+            "int64",
+            "int8",
+            "int_",
+            "integer",
+            "uint16",
+            "uint32",
+            "uint64",
+            "uint8",
+            "Uint8",
+            "Uint16",
+            "Uint32",
+            "Uint64",
+            "Uint128",
+            "Uint256",
+            "Int8",
+            "Int16",
+            "Int32",
+            "Int64",
+            "Int128",
+            "Int256"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "INTEGER"
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_min_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "department_id",
+          "max_value": 1,
+          "min_value": 1
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 1
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_max_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "department_id",
+          "max_value": 11,
+          "min_value": 11
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 11
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_mean_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "department_id",
+          "max_value": 6.4,
+          "min_value": 6.4
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 6.4
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_median_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "department_id",
+          "max_value": 6.0,
+          "min_value": 6.0
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 6.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_quantile_values_to_be_between",
+        "kwargs": {
+          "allow_relative_error": false,
+          "batch_id": "mssql_trn-employees",
+          "column": "department_id",
+          "quantile_ranges": {
+            "quantiles": [
+              0.05,
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ],
+            "value_ranges": [
+              [
+                2,
+                2
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                6,
+                6
+              ],
+              [
+                9,
+                9
+              ],
+              [
+                10,
+                10
+              ]
+            ]
+          }
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "details": {
+          "success_details": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "observed_value": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "values": [
+            2,
+            4,
+            6,
+            9,
+            10
+          ]
+        }
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "department_id",
+          "value_set": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 40,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "department_id"
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 40,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "department_id",
+          "max_value": 0.275,
+          "min_value": 0.275
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 0.275
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_type_list",
+        "kwargs": {
+          "batch_id": "mssql_trn-employees",
+          "column": "department_id",
+          "type_list": [
+            "BIGINT",
+            "BYTEINT",
+            "ByteType()",
+            "INT",
+            "INT64",
+            "INTEGER",
+            "Int16Dtype",
+            "Int32Dtype",
+            "Int64Dtype",
+            "Int8Dtype",
+            "IntegerType",
+            "IntegerType()",
+            "LongType",
+            "LongType()",
+            "SMALLINT",
+            "ShortType()",
+            "TINYINT",
+            "UInt16Dtype",
+            "UInt32Dtype",
+            "UInt64Dtype",
+            "UInt8Dtype",
+            "int",
+            "int16",
+            "int32",
+            "int64",
+            "int8",
+            "int_",
+            "integer",
+            "uint16",
+            "uint32",
+            "uint64",
+            "uint8",
+            "Uint8",
+            "Uint16",
+            "Uint32",
+            "Uint64",
+            "Uint128",
+            "Uint256",
+            "Int8",
+            "Int16",
+            "Int32",
+            "Int64",
+            "Int128",
+            "Int256"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": "INTEGER"
+      },
+      "success": true
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 64,
+    "success_percent": 100.0,
+    "successful_expectations": 64,
+    "unsuccessful_expectations": 0
+  },
+  "success": true
+}
